@@ -1,0 +1,917 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    --orang: #daac00;
+    --orang-light : #fcc302;
+    --sky: #00bec9;
+    --black: #313243;
+    --black-foot: #343434;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    max-width: 1440px;
+    background: var(--orang);
+    margin: 0 auto;
+    overflow: hidden;
+    & nav {
+        
+        & .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: auto;
+            margin: 30px 0;
+
+            & .nav-con ul {
+                list-style: none;
+
+                & li a {
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 27px;
+                    margin: 40px;
+                    color: white;
+                }
+            }
+
+            & .search-con {
+                display: flex;
+                justify-content: center;
+                & input {
+                padding: 20px 20px;
+                width: 205px;
+                height: 50px;
+                background: var(--orang-light);
+                border: none; 
+
+                }
+                & a {
+                    background: var(--sky);
+                    width: 50px;
+                    height: 50px;
+
+                    & img {
+                        padding: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    header {
+        overflow: hidden;
+        & .container {
+            height: auto;
+            display: flex;
+            flex-direction: column;
+
+            & .nav-con li {
+                display: flex;
+                flex-direction: column;
+            }
+
+        }
+    }
+}
+
+.First-line {
+    max-width: 1440px;
+    height: 780px;
+    background: var(--orang-light);
+    margin: 0 auto;
+    overflow: hidden;
+
+    & .container {
+        display: flex;
+        justify-content: space-between;
+        width: 1160px;
+        height: auto;
+        margin: 0 auto;
+
+        & .First-line-info {
+            height: auto;
+            margin-top: 170px;
+            & h1 {
+                font-size: 60px;
+                color: white;
+            }
+            & p {
+                margin-top: 40px;
+                font-size: 30px;
+                color: white;
+            }
+
+            & .First-line-btn {
+                margin-top: 50px;
+
+                & .Contact {
+                    background: var(--sky);
+                    padding: 20px 35px;
+                    margin-right: 20px;
+                    border-radius: 8px;
+                    text-decoration: none;
+                    color: white;
+                    font-size: 18px;
+                }
+                & .Os {
+                    background: var(--orang-light);
+                    outline: 2px solid white;
+                    padding: 20px 35px;
+                    margin-right: 20px;
+                    border-radius: 8px;
+                    text-decoration: none;
+                    color: white;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        & .First-line-img {
+            margin-top: 70px;
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .First-line {
+        overflow: hidden;
+        & .container {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+
+            & .First-line-info {
+                height: auto;
+                margin: 25px 25px;
+
+                & h1 {
+                    font-size: 45px;
+                }
+                & p {
+                    margin-top: 20px;
+                    font-size: 30px;
+                }
+            }
+            & .First-line-img {
+                margin-top: 40px;
+                text-align: center;
+                & img  {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+.veterinarian-animals {
+    max-width: 1440px;
+    height: 780px;
+    margin: 0 auto;
+    overflow: hidden;
+    outline: 1px solid wheat;
+    & .container {
+        display: flex;
+        justify-content: space-between;
+        width: 1160px;
+        margin: 0 auto;
+        
+        & .veterinarian-animals-info {
+            height: auto;
+            margin-top: 170px;
+
+            & h1 {
+                font-size: 60px;
+                color: var(--black);
+            }
+
+            & p {
+                margin-top: 40px;
+                font-size: 35px;
+                color: var(--black);
+            }
+        }
+        & .veterinarian-animals-btn {
+            margin-top: 50px;
+
+            & .Os {
+                background: var(--orang-light);
+                padding: 20px 35px;
+                margin-right: 20px;
+                border-radius: 8px;
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+            }
+        }
+
+        & .veterinarian-animals-info-img {
+            margin-top: 150px;
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .veterinarian-animals {
+        overflow: hidden;
+
+        & .container {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+
+            & .veterinarian-animals-info {
+                margin: 25px 25px;
+                & h1 {
+                    font-size: 45px;
+                }
+                & p {
+                    margin-top: 20px;
+                    font-size: 30px;
+                }
+            }
+
+            & .veterinarian-animals-info-img {
+                margin-top: 40px;
+                text-align: center;
+
+                & img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+.grid-title {
+    max-width: 1440px;
+    background: var(--orang-light);
+    margin: 0 auto;
+    overflow: hidden;
+
+    & .container {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        & .title-info {
+            margin-top: 100px;
+
+            & h1 {
+                font-size: 60px;
+                color: white;
+                text-align: center;
+            }
+
+            & p {
+                margin-top: 20px;
+                color: white;
+                font-size: 32px;
+                text-align: center;
+            }
+        }
+        & .grid-con {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            column-gap: 75px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+
+            & .grid-box {
+                & img {
+                    width: 100%;
+                }
+        
+                & h2 {
+                    margin-top: 30px;
+                    font-size: 30px;
+                    text-align: center;
+                    color: white;
+                }
+        
+                & p {
+                    font-size: 28px;
+                    margin-top: 15px;
+                    text-align: center;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .grid-title {
+        
+        overflow: hidden;
+
+        & .container {
+            width: auto;
+            height: auto;
+            margin: 0 auto;
+
+            & .title-info {
+                margin-top: 50px;
+            }
+            
+            & .grid-con .grid-box {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+.veterinarian-animals-pag2 {
+    max-width: 1440px;
+    background: white;
+    margin: 0 auto;
+    overflow: hidden;
+    outline: 1px solid wheat;
+
+    & .container {
+        display: flex;
+        height: 780px;
+        width: 1160px;
+        margin: 0 auto;
+        
+        & .veterinarian-animals-img {
+            margin-top: 150px;
+            & img {
+                width: 100%;
+            }
+        }
+
+        & .veterinarian-animals-info {
+            width: 660px;
+            height: auto;
+            margin-top: 170px;
+
+            & h1 {
+                text-align: right;
+                font-size: 55px;
+                color: var(--black);
+            }
+            & p {
+                color: var(--black);
+                margin-top: 20px;
+                text-align: right;
+                font-size: 35px;
+            }
+            & .veterinarian-animals-btn {
+                text-align: right;
+                margin-top: 30px;
+                
+                & .Os {
+                    background: var(--orang-light);
+                    padding: 20px 35px;
+                    border-radius: 8px;
+                    text-decoration: none;
+                    color: white;
+                    font-size: 18px;
+                }
+            }
+
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .veterinarian-animals-pag2 {
+        overflow: hidden;
+        & .container {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+
+            & .veterinarian-animals-img {
+                text-align: center;
+                margin-top: 50px;
+                & img {
+                    width: 50%;
+                }
+            }
+
+            & .veterinarian-animals-info {
+                width: auto;
+                margin-top: 30px;
+                padding: 20px;
+                & h1 {
+                    text-align: left;
+                    font-size: 43px;
+                }
+                & p {
+                    font-size: 30px;
+                    margin-top: 20px;
+                    text-align: left;
+                }
+            }
+            & .veterinarian-animals-btn {
+                text-align: right;
+                margin-top: 50px;
+                margin-bottom: 50px; 
+            }
+        }   
+    }
+}
+
+.dog-sell {
+    max-width: 1440px;
+    background: var(--orang-light);
+    margin: 0 auto;
+    overflow: hidden;
+
+    & .container {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        width: 1160px;
+        margin: 0 auto;
+        
+        & .title-con {
+            margin-top: 100px;
+
+            & h1 {
+                font-size: 60px;
+                color: white;
+                text-align: center;
+            }
+
+            & p {
+                margin-top: 20px;
+                color: white;
+                font-size: 32px;
+                text-align: center;
+            }
+        }
+        & .dog-grid-con {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            column-gap: 75px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+
+            & .dog-grid-box {
+                text-align: center;
+                margin: 0 40px;
+
+                & .price-info {
+                    display: flex;
+                    justify-content: space-evenly;
+                    margin-top: 40px;
+
+                    & .pice {
+                        font-size: 50px;
+                        text-decoration: line-through;
+                        color: white;
+                    }
+
+                    & .pice-dc {
+                        font-size: 50px;
+                        color: white;
+                    }
+                }
+
+                & .dog-btn {
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+
+                    & .buy-now {
+                        background: var(--sky);
+                        padding: 20px 50px;
+                        border-radius: 25px;
+                        text-decoration: none;
+                        color: white;
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .dog-sell {
+        overflow: hidden;
+
+        & .container {
+            width: auto;
+            height: auto;
+            margin: 0 auto;
+
+            & .title-con  {
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+.vetcare-team {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    outline: 1px solid wheat;
+
+    .container {
+        margin: 0 auto;
+        height: 1024px;
+        width: 1160px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .title-info {
+            text-align: center;
+            margin-top: 150px;
+
+            & h1 {
+                font-size: 60px;
+                color: var(--black);
+                text-align: center;
+            }
+
+            & p {
+                font-size: 32px;
+                margin-top: 20px;
+                color: var(--black);
+                text-align: center;
+            }
+        }
+
+        & .grid-con {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 75px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            
+            & .grid-box {
+                text-align: center;
+                & h2 {
+                    margin-top: 20px;
+                    font-size: 30px;
+                }
+
+                & p {
+                    margin-top: 10px;
+                    font-size: 23px;
+                }
+                & .social-con {
+                    margin-top: 30px;
+                    & img {
+                        margin: 0 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .vetcare-team {
+        
+        overflow: hidden;
+
+        & .container {
+            width: auto;
+            height: auto;
+            margin: 0 auto;
+
+            & .title-info {
+                margin-top: 50px;
+            }
+            & .grid-con {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+                & .grid-box {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+}
+.vaccinations {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url(../img/bg-dog.png);
+
+    & .container {
+        width: 1160px;
+        height: 580px;
+        margin: 0 auto;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+
+        & .container-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            width: 270px;
+            height: 300px;
+            position: relative;
+         
+            & img {
+                position: absolute;
+                top: 30%;
+                right: 35%;
+            }
+
+            & h2 {
+                margin-top: 50px;
+                text-align: center;
+                font-size: 36px;
+                color: white;
+            }
+            & p {
+                font-size: 40px;
+                color: white;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .vaccinations {
+        overflow: hidden;
+
+        & .container {
+            width: auto;
+            height: auto;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+
+            & .container-box {
+                margin-bottom: 50px;
+            }
+        }
+    }
+} 
+
+.recent-post {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    outline: 1px solid wheat;
+
+    & .container {
+        width: 1160px;
+        height: 1160px;
+        margin: 0 auto;
+
+        & .title-info {
+            text-align: center;
+            margin-top: 200px;
+
+            & h1 {
+                font-size: 70px;
+                font-weight: bold;
+                color: var(--black);
+            }
+            & p {
+                margin-top: 20px;
+                font-size: 40px;
+                color: var(--black);
+            }
+        }
+        & .container-info {
+            margin-top: 150px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 2rem;
+        }
+        & .info-box {
+            height: 620px;
+            box-shadow:  0 0 10px rgba(0, 0, 0, 0.3);
+            & img {
+                width: 100%;
+            }
+            & .info-box-inline {
+                padding: 15px 30px;
+
+                & h2 {
+                    font-size: 27px;
+                }
+
+                & h3 {
+                    margin-top: 15px;
+                    color: var(--sky);
+                }
+                & p {
+                    margin-top: 5px;
+                    font-size: 18px;
+                }
+
+                & .Read {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .recent-post {
+        overflow: hidden;
+
+        & .container {
+            width: auto;
+            height: auto;
+            margin: 0 auto;
+
+            & .title-info {
+                margin-top: 50px;
+            }
+
+            & .container-info {
+                margin-top: 50px;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                padding: 20px;
+
+                & .info-box {
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: var(--black-foot);
+    color: white;
+    height: 650px;
+
+    & .container {
+        display: flex;
+        width: 1160px;
+        margin: 0 auto;
+        justify-content: space-between;
+
+        & .container-about {
+            margin-top: 150px;
+
+            & h1 {
+                font-size: 40px;
+            }
+
+            & ul {
+                list-style: none;
+
+                & li  {
+                    margin-top: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    & a {
+                        color: white;
+                        font-size: 30px;
+                        text-decoration: none;
+                        line-height: 3.5rem;
+                    }
+                }
+            }
+        }
+
+        & .container-Services {
+            margin-top: 150px;
+            margin-left: 100px;
+            & h1 {
+                font-size: 40px;
+            }
+
+            & ul {
+                list-style: none;
+
+                & li  {
+                    margin-top: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    & a {
+                        color: white;
+                        font-size: 30px;
+                        text-decoration: none;
+                        line-height: 3.5rem;
+                    }
+                }
+            }
+        }
+
+        & .container-title {
+            margin-top: 130px;
+
+            & h1 {
+                font-size: 40px;
+                text-align: right;
+            }
+            & p {
+                font-size: 30px;
+            }
+            & .footer-btn {
+                margin-top: 40px;
+                display: flex;
+                justify-content: center;
+
+                & input {
+                    width: 390px;
+                    height: 90px;
+                    background: var(--orang-light);
+                }
+                & a {
+                    width: 140px;
+                    height: 90px;
+                    background: var(--sky);
+                    position: relative;
+                    & img {
+                        position: absolute;
+                        top: 33%;
+                        left: 33%;
+                    }
+                }
+            }
+        }
+        & .social {
+            margin-top: 40px;
+            text-align: right;
+
+            & a {
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    footer {
+        overflow: hidden;
+        width: auto;
+        height: auto;
+
+        & .container {
+            width: auto;
+            height: auto;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            & .container-about {
+                margin-top: 40px;
+            }
+
+            & .container-Services {
+                margin-left: 0px;
+                margin-top: 40px;
+            }
+
+            & .container-title {
+                margin-top: 40px;
+                & h1 {
+                    text-align: center;
+                }
+                & p {
+                    margin-top: 20px;
+                    text-align: center;
+                    font-size: 25px;
+                }
+                & .footer-btn {
+                    margin-top: 40px;
+                    display: flex;
+                    justify-content: center;
+    
+                    & input {
+                        width: 220px;
+                        height: 90px;
+                        background: var(--orang-light);
+                    }
+                    & a {
+                        width: 100px;
+                        height: 90px;
+                        background: var(--sky);
+                        position: relative;
+                        & img {
+                            position: absolute;
+                            top: 33%;
+                            left: 33%;
+                        }
+                    }
+                }
+            
+            & .social {
+                text-align: center;
+                margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
